@@ -1,3 +1,5 @@
+// Competitor foods
+
 export const compFood = [
   {
     img: "https://www.nomnomnow.com/images/brands/holistic_select_fish.jpg",

@@ -1,10 +1,12 @@
-import { nomFoods, compFood } from "./consts";
+import { nomFoods, compFood } from "./Consts";
 import { useState } from "react";
 import FoodSelector from "./FoodSelector";
 
 function App() {
   const [selectedComp, setSelectedComp] = useState(compFood[0]);
   const [selectedNom, setSelectedNom] = useState(nomFoods[0]);
+  const MIN_PROTEIN = 287
+  const MIN_FAT = 300
 
   const FoodDisplay = ({ foodDetails }) => {
     return (
@@ -53,10 +55,11 @@ function App() {
       </div>
       <div className="comparison">
         <div className="nutrition-text">
+          {/* The selected competitor food extra info. */}
           <h3>
             {selectedComp.name} contains{" "}
-            {Math.round((selectedComp.protein / 287) * 100)}% min protein,{" "}
-            {Math.round((selectedComp.fat / 300) * 100)}% min fat and has a
+            {Math.round((selectedComp.protein / MIN_PROTEIN) * 100)}% min protein,{" "}
+            {Math.round((selectedComp.fat / MIN_FAT) * 100)}% min fat and has a
             calorie density of {selectedComp.kcal}kcal/kg.
           </h3>
         </div>

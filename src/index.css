@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  /* font-family: "Courgette", cursive; */
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.food-pickers {
+  white-space: nowrap;
+  font-size: large;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2fr 100px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+}

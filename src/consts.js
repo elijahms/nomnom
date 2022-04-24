@@ -5,6 +5,7 @@ export const compFood = [
     fat: 39,
     carbohydrate: 118,
     id: 1,
+    kcal: 3599,
     name: "Holistic Select ® Fish",
   },
   {
@@ -13,6 +14,7 @@ export const compFood = [
     fat: 43,
     carbohydrate: 115,
     id: 2,
+    kcal: 3718,
     name: "Holistic Select ® Lamb",
   },
   {
@@ -21,6 +23,7 @@ export const compFood = [
     fat: 41,
     carbohydrate: 119,
     id: 3,
+    kcal: 3916,
     name: "Holistic Select ® Chicken & Brown Rice",
   },
 ];

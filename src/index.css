@@ -4,6 +4,7 @@ body {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: bisque;
 }
 
 .food-pickers {
@@ -12,11 +13,25 @@ body {
 }
 
 .container {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 2fr 100px;
-  grid-column-gap: 20px;
   grid-row-gap: 20px;
-  justify-items: stretch;
   align-items: stretch;
+}
+
+.comp-food-details {
+  text-align: right;
+  border-right: 4px solid gray;
+  padding-right: 20px;
+}
+
+.nom-food-details {
+  padding-left: 15px;
+}
+
+.nutrition-text {
+  width: 80%;
+  text-align: center;
 }

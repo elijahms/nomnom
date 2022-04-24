@@ -1,4 +1,4 @@
-import { nomFoods, compFood } from "./Consts";
+import { nomFoods, compFood } from "./consts";
 import { useState } from "react";
 import FoodSelector from "./FoodSelector";
 

@@ -8,12 +8,12 @@ const FoodSelector = ({
   setSelectedComp,
 }) => {
   const [selectValue, setSelectValue] = useState(foodOptions[0]);
-    
+
   // When the select value is changed look for the correct object based on id and set the correct state to the selected object
   function changeSelection(e) {
     setSelectValue(e.target.value);
-    let selectedFood = foodOptions.filter(
-      (food) => food.id - e.target.value === 0
+    let selectedFood = foodOptions.filter((food) =>
+      parseInt(food.id) === parseInt(e.target.value) ? food : null
     );
     nom ? setSelectedNom(selectedFood[0]) : setSelectedComp(selectedFood[0]);
   }
